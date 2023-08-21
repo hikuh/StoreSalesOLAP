@@ -1,0 +1,82 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>StoreSalesOLAP</Database>
+    <Server>DESKTOP-1FAUCLF\CLIENT</Server>
+    <ConnectionString>Data Source=DESKTOP-1FAUCLF\CLIENT;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>70W0w4mQzEchfh9C9OzvXJb0mQs=4/27/2023 7:30:10 AM4/27/2023 7:30:10 AM</TimeStamp>
+        <ID>
+          <String>Store Sales</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>tPsLVXeDnTmhaTtM0smBNyR+eHY=4/27/2023 7:30:48 AM4/27/2023 7:30:47 AM</TimeStamp>
+        <ID>
+          <String>Store Sales DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>FFerR9Ns77BrmMwe6iii0db8mKQ=4/27/2023 7:35:58 AM4/27/2023 7:31:37 AM</TimeStamp>
+        <ID>
+          <String>SS Customer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Y2BHuZt8eEOVJuF/0IJZXtp6HB0=4/27/2023 7:33:45 AM4/27/2023 7:31:37 AM</TimeStamp>
+        <ID>
+          <String>SS Time Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>US/Z6arLxku8n/6giXfyuWJfSlY=4/27/2023 7:37:41 AM4/27/2023 7:31:37 AM</TimeStamp>
+        <ID>
+          <String>SS Item</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>urZpFZHutrn55dtF4nqrJnegPX4=4/27/2023 7:38:53 AM4/27/2023 7:31:37 AM</TimeStamp>
+        <ID>
+          <String>SS Store</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>dO8KSxyicEIGRO1q2MNicguLbwU=4/27/2023 7:38:53 AM4/27/2023 7:31:37 AMgHtjroWTfIMEH7EvIh+qvmUYdiY=4/27/2023 7:31:38 AM4/27/2023 7:31:37 AM</TimeStamp>
+        <ID>
+          <String>Store Sales</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>0w8ijt25l/PmMhc5hj+gBwioYh8=4/27/2023 7:28:01 AM4/27/2023 7:28:00 AM</TimeStamp>
+      <ID>
+        <String>StoreSalesOLAP</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2023-04-27T00:44:56.106667Z</LastDeployed>
+</DeploymentSnapshot>

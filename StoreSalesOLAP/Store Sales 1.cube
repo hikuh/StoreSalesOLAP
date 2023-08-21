@@ -1,0 +1,230 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2cc2fa95-46d9-4308-89a6-db0465bfa5bf" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Store Sales</ID>
+  <Name>Store Sales</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="77a58cb9-dc3a-4fe7-8923-6259a3113291">
+      <ID>SS Customer 1</ID>
+      <Name>SS Customer 1</Name>
+      <DimensionID>SS Customer 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a8f4dffa-9d7a-49b4-8e41-e5d6303f91cc">
+          <AttributeID>Cust Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="d3198ad5-ff2b-46a6-9df3-46369b922db3">
+      <ID>SS Time Dim 1</ID>
+      <Name>SS Time Dim 1</Name>
+      <DimensionID>SS Time Dim 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d5ed24b4-28b6-4c2c-95ec-2ba31fce06e6">
+          <AttributeID>Time No</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b8df3309-a7fd-4a7d-b6a2-e4821d23a495">
+      <ID>SS Item 1</ID>
+      <Name>SS Item 1</Name>
+      <DimensionID>SS Item 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="59358bad-0bac-41ad-ab3b-e8d160b56ec6">
+          <AttributeID>Item Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="69c0fbad-7d11-4021-a6eb-7a9d3bf32d85">
+      <ID>SS Store 1</ID>
+      <Name>SS Store 1</Name>
+      <DimensionID>SS Store 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="84e8a101-a8bf-4a58-b485-d9ed31481cc8">
+          <AttributeID>Store Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2fc984bc-6841-4dbb-afe5-7c1d1ae6b77b">
+          <AttributeID>Div Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="67996cc3-4afd-417f-81ef-da42afebfd5f">
+      <ID>SS Sales</ID>
+      <Name>SS Sales</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="3a7fb461-dc3a-4e69-890d-4d1b5092efc6">
+          <ID>Sales Units</ID>
+          <Name>Sales Units</Name>
+          <Source dwd:design-time-name="5083525b-7330-4394-a4b8-81c5d9ef91bf">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="83ee4cf2-60af-4175-9eac-f738e1a00b51">
+              <TableID>dbo_SSSales</TableID>
+              <ColumnID>SalesUnits</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0fa1454f-9530-401e-958d-a04317cb98a2">
+          <ID>Sales Dollar</ID>
+          <Name>Sales Dollar</Name>
+          <Source dwd:design-time-name="41fb279f-b65d-4165-8b0b-341c6ab66c8b">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="51a90553-ef44-4126-b20c-4183cfaa5953">
+              <TableID>dbo_SSSales</TableID>
+              <ColumnID>SalesDollar</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9e061eb1-04d1-4815-892b-5829ad9e04d9">
+          <ID>Sales Cost</ID>
+          <Name>Sales Cost</Name>
+          <Source dwd:design-time-name="79854aca-7871-40d8-9087-48293c99254a">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5c5b0ceb-cbf5-4afb-8632-fd307bdbbf99">
+              <TableID>dbo_SSSales</TableID>
+              <ColumnID>SalesCost</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f352aeac-e840-4f2e-a3ef-e3f16243ae9c">
+          <ID>SS Sales Count</ID>
+          <Name>SS Sales Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="54ee5130-d913-4897-b84b-da8dce1a4f84">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="90362b70-e787-429b-bdfa-a4f313b563fa">
+              <TableID>dbo_SSSales</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f50e00ac-0ac0-4952-b74b-01108a702f87">
+          <CubeDimensionID>SS Customer 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c22bc8ae-601d-481a-aab5-dee12b1a7d48">
+              <AttributeID>Cust Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bb4e062a-de0d-48db-8eef-540597eee8c9">
+                  <DataType>WChar</DataType>
+                  <DataSize>8</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="624c9a19-a711-4305-907a-fb0ffdee07d5">
+                    <TableID>dbo_SSSales</TableID>
+                    <ColumnID>CustId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b785aba7-1a83-433b-9090-c26de769a984">
+          <CubeDimensionID>SS Time Dim 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f5e621bc-e439-4c58-9e3e-3871aa375da5">
+              <AttributeID>Time No</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="40ac55fb-ccce-4aff-b703-b4d139cea4a1">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8507ddc6-c05f-427c-b113-16848d3596b0">
+                    <TableID>dbo_SSSales</TableID>
+                    <ColumnID>TimeNo</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d241d3e7-21cd-4c66-98d7-bbd44e4ba1b1">
+          <CubeDimensionID>SS Item 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d8d4f1f9-421c-4b39-8004-1d75a6c42581">
+              <AttributeID>Item Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a070fe27-9b9f-4065-9f2b-5ff6682d69a0">
+                  <DataType>WChar</DataType>
+                  <DataSize>8</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7629442c-9127-42e5-a584-efcabd4b6b6f">
+                    <TableID>dbo_SSSales</TableID>
+                    <ColumnID>ItemId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="707efe08-6d51-495b-8829-2032d75385ab">
+          <CubeDimensionID>SS Store 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f8e7f5d9-0c31-4584-ae41-a237d22ac561">
+              <AttributeID>Store Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fcde476e-45ac-4983-a2c8-8961fd57d7e9">
+                  <DataType>WChar</DataType>
+                  <DataSize>8</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1e6d5273-6c34-495d-8f75-06988cac0cb9">
+                    <TableID>dbo_SSSales</TableID>
+                    <ColumnID>StoreId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="ad69a0d0-2082-4ea8-b2e0-b013cf66a523">
+    <DataSourceViewID>Store Sales</DataSourceViewID>
+  </Source>
+</Cube>
